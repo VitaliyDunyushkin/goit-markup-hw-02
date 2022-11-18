@@ -1,13 +1,24 @@
 :root{
-    --first-color:#FFFFFF;
+    --main-color:#757575;
     --second-color:#212121;
-    --third-color:#757575;
+    --third-color:#FFFFFF;    
     --accent-color:#2196F3;
+    --logo-color:#000000;
+    --hero-bckgd-color:#2F303A;
+    --hero-btn-color:#188CE8;
+    --team-bckgd-color:#F5F4FA;
+    --foot-item-color:rgba(255, 255, 255, 0.6);
 }
 
-
 body {
-font-family: Roboto, Raleway;
+    font-family: 'roboto', 'sans-serif', 'raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color:var(--third-color);
 }
 
 .link {
@@ -19,64 +30,87 @@ font-family: Roboto, Raleway;
     list-style: none;
 }
 
-footer {
-    background-color:#2F303A;
-}
-
-.hero {
-    background-color: #2F303A;
-}
-
 .btn {
     cursor: pointer;
     border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
 }
 
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 --------/ Index / ------------------
+
+.Logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
 
 .logo1, .logo2, .logo3 {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
 .logo2{
-    color: #000000;
+    color: var(--logo-color);
 }
 
 .logo3{
-    color: var(--first-color);
+    color: var(--third-color);
 }
 
 
-.hearder-list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--second-color);
+.hearder-list-item {
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--second-color);
 }
+
+.hearder-list-item:hover,
+.hearder-list-item:focus,
+.hearder-list-item:active {
+    color: var(--accent-color);
+}
+
 
 .hearder-cont-item {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--third-color);
 }
 
 .hearder-cont-item:hover,
 .hearder-cont-item:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
+}
+
+.hero {
+    background-color: var(--hero-bckgd-color);
 }
 
 .hero-header {
@@ -86,7 +120,7 @@ footer {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--first-color);
+    color: var(--third-color);
 }
 
 .hero-btn {
@@ -98,38 +132,20 @@ footer {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--first-color);      
+    color: var(--third-color);      
     background-color: var(--accent-color);
 }
 
 .hero-btn:hover,
-.hero-btn:focus
- {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    background-color: #188CE8;
+.hero-btn:focus {
+    background-color: var(--hero-btn-color);
 }
 
 .our-benefits-list-header {
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 700;  
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color);
-}
-
-.our-benefits-list-item {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--third-color);
 }
 
 .our-work-hearder {
@@ -137,8 +153,11 @@ footer {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
+    color:var(--second-color);
+}
+
+.team{
+    background: var(--team-bckgd-color);
 }
 
 .team-hearder {
@@ -146,49 +165,43 @@ footer {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--second-color);
 }
 
 .team-list-hearder {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--second-color);
 }
 
 .team-list-text {
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--third-color);
+}
+
+footer {
+    background-color:var(--hero-bckgd-color);
+}
+
+address{
+    font-style: normal;
 }
 
 .footer-adress {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--first-color);  
+    color: var(--third-color);  
 }
 
 .footer-item {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--foot-item-color);
 }
 
 .footer-item:hover,
 .footer-item:focus {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
-
 
 
 
@@ -200,19 +213,12 @@ footer {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
+    color:var(--second-color);
 }
 
 .filters-item:hover,
 .filters-item:focus {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-color);
+    color: var(--third-color);
     background-color: var(--accent-color);
 }
 
@@ -227,6 +233,4 @@ footer {
 .portfolio-item-text {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--third-color);
 }
