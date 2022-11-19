@@ -6,14 +6,12 @@
     --logo-color:#000000;
     --hero-bckgd-color:#2F303A;
     --hero-btn-color:#188CE8;
-    --team-bckgd-color:#F5F4FA;
+    --bckgd-color:#F5F4FA;
     --foot-item-color:rgba(255, 255, 255, 0.6);
 }
 
 body {
-    font-family: 'roboto', 'sans-serif', 'raleway';
-    font-style: normal;
-    font-weight: 400;
+    font-family: Roboto, Sans-serif;    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -32,15 +30,6 @@ body {
 
 .btn {
     cursor: pointer;
-    border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal; 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
 }
 
 .visually-hidden {
@@ -50,25 +39,16 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
 
---------/ Index / ------------------
+/*-------- Index  ------------------*/
 
-.Logo{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-color);
-}
-
-.logo1, .logo2, .logo3 {
-    font-family: 'Raleway';
+.logo{
+    font-family: 'Raleway', Sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -83,7 +63,6 @@ body {
     color: var(--third-color);
 }
 
-
 .hearder-list-item {
 font-weight: 500;
 line-height: 1.14;
@@ -96,7 +75,6 @@ color: var(--second-color);
 .hearder-list-item:active {
     color: var(--accent-color);
 }
-
 
 .hearder-cont-item {
     font-weight: 500;
@@ -127,10 +105,7 @@ color: var(--second-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.88;    
     letter-spacing: 0.06em;
     color: var(--third-color);      
     background-color: var(--accent-color);
@@ -157,7 +132,7 @@ color: var(--second-color);
 }
 
 .team{
-    background: var(--team-bckgd-color);
+    background: var(--bckgd-color);
 }
 
 .team-hearder {
@@ -205,7 +180,7 @@ address{
 
 
 
---------/ Portfolio / ------------------
+/*-------- Portfolio ------------------*/
 
 .filters-item {
     font-family: inherit;
@@ -214,6 +189,8 @@ address{
     line-height: 1.62;
     text-align: center;
     color:var(--second-color);
+    background: var(--bckgd-color);
+    border-radius: 4px;
 }
 
 .filters-item:hover,
