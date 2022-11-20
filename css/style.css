@@ -70,9 +70,12 @@ letter-spacing: 0.02em;
 color: var(--second-color);
 }
 
+.active{
+    color: var(--accent-color);
+}
+
 .hearder-list-item:hover,
-.hearder-list-item:focus,
-.hearder-list-item:active {
+.hearder-list-item:focus {
     color: var(--accent-color);
 }
 
@@ -80,6 +83,7 @@ color: var(--second-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: inherit;
 }
 
 .hearder-cont-item:hover,
